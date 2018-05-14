@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin"
+             x:Class="Xamarin.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:ApplicationModel />
+    </ContentPage.BindingContext>
+    <!-- TODO: make binding work -->
+    <StackLayout 
+                 HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand">
+        <Entry Placeholder="Number" Text="{Binding Path=Number, StringFormat='{0}', Mode=TwoWay}" />
+        <Entry Placeholder="Text" Text="{Binding Path=Text, Mode=TwoWay}"/>
+        <Entry Placeholder="Result" Text="{Binding Path=Result, Mode=OneWay}" IsEnabled="False" />
+        <Button Text="Submit" />
+    </StackLayout>
+
+</ContentPage>

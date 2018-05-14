@@ -1,0 +1,14 @@
+{
+  "name": "node-js-console-client",
+  "version": "0.0.0",
+  "description": "NodeJsConsoleClient",
+  "main": "server.js",
+  "author": {
+    "name": "KKO"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "npm": "^6.0.0",
+    "soap": "^0.24.0"
+  }
+}
