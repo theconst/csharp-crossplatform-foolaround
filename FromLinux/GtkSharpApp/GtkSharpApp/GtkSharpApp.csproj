@@ -53,7 +53,7 @@
     </Reference>
     <Reference Include="Mono.Posix" />
     <Reference Include="CommonDivisorLibrary">
-      <HintPath>..\..\..\Dropbox\CommonDivisorLibrary\bin\Debug\netstandard2.0\CommonDivisorLibrary.dll</HintPath>
+      <HintPath>..\..\CommonDivisorLibrary\CommonDivisorLibrary\bin\Debug\netstandard2.0\CommonDivisorLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

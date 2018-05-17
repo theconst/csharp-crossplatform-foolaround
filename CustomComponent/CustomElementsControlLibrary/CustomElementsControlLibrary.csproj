@@ -29,6 +29,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommonDivisorLibrary">
+      <HintPath>..\..\CommonDivisorLibrary\CommonDivisorLibrary\bin\Debug\netstandard2.0\CommonDivisorLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PermutationsDLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLDemo\PermutationsDLL\bin\Debug\PermutationsDLL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -51,12 +58,6 @@
     <Compile Include="ColorsChangedEventArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\DLLDemo\PermutationsDLL\PermutationsDLL.csproj">
-      <Project>{b01ce037-d725-41ef-8c36-24267a3283cb}</Project>
-      <Name>PermutationsDLL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

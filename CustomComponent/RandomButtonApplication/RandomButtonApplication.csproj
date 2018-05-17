@@ -79,10 +79,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\DLLDemo\PermutationsDLL\PermutationsDLL.csproj">
-      <Project>{b01ce037-d725-41ef-8c36-24267a3283cb}</Project>
-      <Name>PermutationsDLL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CustomElementsControlLibrary\CustomElementsControlLibrary.csproj">
       <Project>{50d1b8e5-e9c7-4ca6-94ed-84ce59def14c}</Project>
       <Name>CustomElementsControlLibrary</Name>

@@ -4,21 +4,17 @@ using System.ServiceProcess;
 
 namespace WindowsHostedWCF
 {
-    // Provide the ProjectInstaller class which allows 
-    // the service to be installed by the Installutil.exe tool
-    [RunInstaller(true)]
+    [RunInstallerAttribute(true)]
     public class ProjectInstaller : Installer
     {
         private ServiceProcessInstaller process;
         private ServiceInstaller service;
-
         public ProjectInstaller()
         {
             process = new ServiceProcessInstaller();
             process.Account = ServiceAccount.LocalSystem;
             service = new ServiceInstaller();
-            service.ServiceName = "WCFPalindromeService";
-
+            service.ServiceName = "WCFPalindromeWindowsHosted";
             Installers.Add(process);
             Installers.Add(service);
         }

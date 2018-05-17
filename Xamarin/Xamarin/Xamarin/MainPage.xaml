@@ -3,18 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Xamarin"
              x:Class="Xamarin.MainPage">
-
-    <ContentPage.BindingContext>
-        <local:ApplicationModel />
-    </ContentPage.BindingContext>
-    <!-- TODO: make binding work -->
+    <!-- Code behind is still needed -->
     <StackLayout 
                  HorizontalOptions="CenterAndExpand"
                  VerticalOptions="CenterAndExpand">
-        <Entry Placeholder="Number" Text="{Binding Path=Number, StringFormat='{0}', Mode=TwoWay}" />
-        <Entry Placeholder="Text" Text="{Binding Path=Text, Mode=TwoWay}"/>
-        <Entry Placeholder="Result" Text="{Binding Path=Result, Mode=OneWay}" IsEnabled="False" />
-        <Button Text="Submit" />
+        <Entry x:Name="Number" Placeholder="Number" />
+        <Entry x:Name="Text" Placeholder="Text"/>
+        <Entry x:Name="Magic" Placeholder="Result"  />
+        <Button Text="Submit" Clicked="OnButtonClicked"/>
     </StackLayout>
 
 </ContentPage>
